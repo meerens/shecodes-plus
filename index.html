@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/style.css" />
+		<script src="https://kit.fontawesome.com/0f23ac749f.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row change-city">
+				<div class="col-2 location-arrow">
+					<button type="button" class="btn btn-labeled" id="location-button">
+						<span class="btn-label">
+							<i class="fas fa-location-arrow"></i>
+						</span>
+					</button>
+				</div>
+				<div class="col-8">
+					<form id="change-city">
+						<div class="form-group">
+							<input
+								type="search"
+								class="form-control"
+								id="city-input"
+								placeholder="Change city"
+								autocomplete="off"
+							/>
+						</div>
+					</form>
+				</div>
+				<div class="col-2 location-search">
+					<button type="button" class="btn btn-labeled" id="search-button">
+						<span class="btn-label">
+							<i class="fas fa-search"></i>
+						</span>
+					</button>
+				</div>
+			</div>
+			<br />
+			<div class="row city-date">
+				<span class="city"></span>
+
+				<span class="top-date"></span>
+			</div>
+			<br />
+			<div class="row city-today">
+				<div class="col today-temp">
+					<span class="today-temp-temp"></span>
+					<span class="units">
+						<a href="#" class="celsius-link" id="today-celsius">°C</a>
+						<a href="#">|</a>
+						<a href="#" class="fahrenheit-link" id="today-fahrenheit">°F</a>
+					</span>
+					<br />
+					<span class="today-temp-forecast"></span>
+				</div>
+				<div class="col today-temp-icon">
+					<img src="images/cloudy.svg" alt="cloudy" width="100px" />
+				</div>
+				<div class="w-100"></div>
+			</div>
+			<br />
+			<div class="forecast-header">5 Day Forecast</div>
+			<div class="row city-forecast">
+				<div class="col first-column" id="day1">
+					<img src="images/rain.svg" width="40px" />
+				</div>
+
+				<div class="col second-column" id="day1">
+					<span class="day"> Monday 19/04 </span><br />
+					<span class="temp"> H: 35° | L: 20°</span>
+				</div>
+
+				<div class="w-100"></div>
+
+				<div class="col first-column" id="day2">
+					<img src="images/rain.svg" width="40px" />
+				</div>
+				<div class="col second-column" id="day2">
+					<span class="day"> Tuesday 20/04 </span><br />
+					<span class="temp"> H: 35° | L: 20°</span>
+				</div>
+				<div class="w-100"></div>
+				<div class="col first-column" id="day3">
+					<img src="images/sun.svg" width="40px" />
+				</div>
+				<div class="col second-column" id="day3">
+					<span class="day"> Wednesday 21/04 </span><br />
+					<span class="temp"> H: 35° | L: 20°</span>
+				</div>
+				<div class="w-100"></div>
+				<div class="col first-column" id="day4">
+					<img src="images/sun.svg" width="40px" />
+				</div>
+				<div class="col second-column" id="day4">
+					<span class="day"> Thursday 22/04 </span><br />
+					<span class="temp"> H: 35° | L: 20°</span>
+				</div>
+				<div class="w-100"></div>
+				<div class="col first-column" id="day5">
+					<img src="images/rain.svg" width="40px" />
+				</div>
+				<div class="col second-column" id="day5">
+					<span class="day"> Friday 23/04 </span><br />
+					<span class="temp"> H: 35° | L: 20°</span>
+				</div>
+
+				<br />
+			</div>
+			<br />
+			<div class="coded-by">
+				Coded by Marian Eerens
+				<a href="https://github.com/meerens"><i class="fab fa-github-square"></i></a>
+			</div>
+		</div>
+
+		<script src="src/index.js"></script>
+	</body>
+</html>

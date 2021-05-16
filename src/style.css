@@ -1,0 +1,129 @@
+body {
+	background: #eaeaea;
+	font-family: "Poppins", sans-serif;
+	margin-top: 40px;
+}
+
+.container {
+	width: 300px;
+	text-align: center;
+	padding: 0;
+}
+
+/* Change City */
+
+.placeholder {
+	font-size: 14px;
+	font-weight: 100;
+}
+
+.form-control {
+	border-radius: 25px;
+	border-width: 1px;
+	padding-left: 8px;
+}
+
+.btn-labeled {
+	margin: 0;
+	padding: 0;
+}
+
+.location-arrow {
+	padding: 9px 0 20px 15px;
+}
+.location-search {
+	padding: 9px 15px 20px 0;
+}
+/* Current City & Date */
+
+.city-date {
+	font-size: 16px;
+}
+
+.city {
+	font-weight: 400;
+}
+.top-date {
+	font-weight: 200;
+}
+/* Current Section */
+
+.forecast-header {
+	font-size: 16px;
+	font-weight: 300;
+	padding: 5px;
+}
+
+/* City Today */
+
+.today-temp {
+	text-align: right;
+	padding-right: 0;
+	padding-top: 15px;
+}
+.today-temp-temp {
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: black;
+}
+
+.fahrenheit-link {
+	color: darkgrey;
+}
+.units {
+	vertical-align: top;
+	font-size: 12px;
+}
+.today-temp-forecast {
+	font-size: 16px;
+	font-weight: 300;
+	padding-right: 5px;
+	text-transform: capitalize;
+}
+.today-temp-icon {
+	text-align: left;
+	padding-left: 0;
+}
+.today-forecast {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+/* City Forecast */
+.first-column {
+	padding: 5px;
+}
+.second-column {
+	font-size: 14px;
+	text-align: left;
+	padding: 5px;
+}
+
+.day {
+	font-weight: 400;
+}
+.temp {
+	font-weight: 200;
+}
+
+/* Coded By */
+.coded-by {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 200;
+}
+.fa-github-square {
+	font-size: 16px;
+	color: black;
+}
