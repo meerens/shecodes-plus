@@ -17,15 +17,15 @@ function formatDate(date) {
 let dateTimeStamp = new Date();
 dateTimeStamp = formatDate(dateTimeStamp);
 
-let currentDateTimeStamp = document.querySelector(".top-date");
+let currentDateTimeStamp = document.querySelector("#today-date");
 currentDateTimeStamp.innerHTML = dateTimeStamp;
 
 /* Current City (Search) & Temperature */
 
 function showCurrentWeather(response) {
-	document.querySelector(".city").innerHTML = response.data.name;
-	document.querySelector(".today-temp-temp").innerHTML = Math.round(response.data.main.temp);
-	document.querySelector(".today-temp-forecast").innerHTML = response.data.weather[0].description;
+	document.querySelector("#city").innerHTML = response.data.name;
+	document.querySelector("#temp-today").innerHTML = Math.round(response.data.main.temp);
+	document.querySelector("#forecast-today").innerHTML = response.data.weather[0].description;
 }
 
 function searchCity(city) {
@@ -64,10 +64,10 @@ function geoPosition(event) {
 let currentGeo = document.querySelector("#location-button");
 currentGeo.addEventListener("click", geoPosition);
 
-/* Celsius & Fahrenheit Conversion */
+/* Celsius | Fahrenheit Conversion */
 
 function todayFahrenheit() {
-	let temperature = document.querySelector(".today-temp-temp");
+	let temperature = document.querySelector("#temp-today");
 	temperature.innerHTML = Math.round((temperature.innerHTML * 9) / 5 + 32);
 }
 
@@ -75,7 +75,7 @@ let linkFahrenheit = document.querySelector("#today-fahrenheit");
 linkFahrenheit.addEventListener("click", todayFahrenheit);
 
 function todayCelsius() {
-	let temperature = document.querySelector(".today-temp-temp");
+	let temperature = document.querySelector("#temp-today");
 	temperature.innerHTML = Math.round(((temperature.innerHTML - 32) * 5) / 9);
 }
 

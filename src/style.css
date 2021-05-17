@@ -10,7 +10,7 @@ body {
 	padding: 0;
 }
 
-/* Change City */
+/* Search Bar */
 
 .placeholder {
 	font-size: 14px;
@@ -46,15 +46,8 @@ body {
 .top-date {
 	font-weight: 200;
 }
-/* Current Section */
 
-.forecast-header {
-	font-size: 16px;
-	font-weight: 300;
-	padding: 5px;
-}
-
-/* City Today */
+/* Current Temperature  */
 
 .today-temp {
 	text-align: right;
@@ -99,8 +92,14 @@ a:active {
 	font-size: 16px;
 	font-weight: 300;
 }
+/* 5 Day Forecast */
 
-/* City Forecast */
+.forecast-header {
+	font-size: 16px;
+	font-weight: 300;
+	padding: 5px;
+}
+
 .first-column {
 	padding: 5px;
 }
@@ -117,7 +116,8 @@ a:active {
 	font-weight: 200;
 }
 
-/* Coded By */
+/* Coded By Footer */
+
 .coded-by {
 	text-align: center;
 	font-size: 12px;
