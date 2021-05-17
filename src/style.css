@@ -120,10 +120,11 @@ a:active {
 /* Coded By */
 .coded-by {
 	text-align: center;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 200;
 }
-.fa-github-square {
-	font-size: 16px;
-	color: black;
+.fa-github-square,
+.fa-linkedin {
+	font-size: 20px;
+	color: rgb(61, 61, 61);
 }
