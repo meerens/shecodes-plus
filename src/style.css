@@ -1,12 +1,12 @@
 body {
 	background: #eaeaea;
 	font-family: "Poppins", sans-serif;
-	margin-top: 30px;
+	margin-top: 20px;
 	color: rgb(61, 61, 61);
 }
 
 .container {
-	width: 300px;
+	max-width: 300px;
 	text-align: center;
 	padding: 0;
 }
@@ -121,7 +121,7 @@ a:active {
 
 .coded-by {
 	text-align: center;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 300;
 	color: rgb(61 61 61 / 60%);
 }
