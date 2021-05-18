@@ -1,7 +1,8 @@
 body {
 	background: #eaeaea;
 	font-family: "Poppins", sans-serif;
-	margin-top: 40px;
+	margin-top: 30px;
+	color: rgb(61, 61, 61);
 }
 
 .container {
@@ -12,39 +13,38 @@ body {
 
 /* Search Bar */
 
-.placeholder {
-	font-size: 14px;
-	font-weight: 100;
-}
-
 .form-control {
+	font-size: 14px;
+	font-weight: 300;
+	color: rgb(61 61 61 / 60%);
 	border-radius: 25px;
 	border-width: 1px;
 	padding-left: 8px;
+	box-shadow: 0 1px 6px 0 rgb(61 61 61 / 20%);
 }
 
-.btn-labeled {
-	margin: 0;
+.change-city {
+	height: 50px;
+	align-content: center;
+}
+
+.fa-location-arrow,
+.fa-search {
+	font-size: 20px;
+}
+
+.col-2 {
 	padding: 0;
-}
-
-.location-arrow {
-	padding: 9px 0 20px 15px;
-}
-.location-search {
-	padding: 9px 15px 20px 0;
 }
 /* Current City & Date */
 
-.city-date {
-	font-size: 16px;
-}
-
 .city {
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: 500;
 }
 .top-date {
-	font-weight: 200;
+	font-size: 14px;
+	font-weight: 300;
 }
 
 /* Current Temperature  */
@@ -79,7 +79,7 @@ a:active {
 	font-size: 12px;
 }
 .today-temp-forecast {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 300;
 	padding-right: 5px;
 	text-transform: capitalize;
@@ -95,7 +95,7 @@ a:active {
 /* 5 Day Forecast */
 
 .forecast-header {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 300;
 	padding: 5px;
 }
@@ -110,21 +110,22 @@ a:active {
 }
 
 .day {
-	font-weight: 400;
+	font-weight: 500;
 }
 .temp {
-	font-weight: 200;
+	font-weight: 300;
+	color: rgb(61 61 61 / 60%);
 }
 
 /* Coded By Footer */
 
 .coded-by {
 	text-align: center;
-	font-size: 12px;
-	font-weight: 200;
+	font-size: 14px;
+	font-weight: 300;
+	color: rgb(61 61 61 / 60%);
 }
 .fa-github-square,
 .fa-linkedin {
 	font-size: 20px;
-	color: rgb(61, 61, 61);
 }
