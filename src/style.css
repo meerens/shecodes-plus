@@ -14,7 +14,7 @@ body {
 /* Search Bar */
 
 .form-control {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 300;
 	color: rgb(61 61 61 / 60%);
 	border-radius: 25px;
@@ -43,7 +43,7 @@ body {
 	font-weight: 500;
 }
 .top-date {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 300;
 }
 
@@ -60,23 +60,20 @@ body {
 	line-height: 100%;
 }
 
-a {
-	text-decoration: none;
-	color: black;
-}
-
-a:hover,
-a:focus,
-a:active {
-	color: black;
-}
-
-.fahrenheit-link {
-	color: darkgrey;
-}
 .units {
 	vertical-align: top;
 	font-size: 12px;
+}
+
+.unit-links {
+	text-decoration: none;
+	color: rgb(61 61 61 / 40%);
+}
+
+.active {
+	color: rgb(61, 61, 61);
+	cursor: default;
+	font-weight: 700;
 }
 .today-temp-forecast {
 	font-size: 14px;
@@ -128,4 +125,5 @@ a:active {
 .fa-github-square,
 .fa-linkedin {
 	font-size: 20px;
+	color: rgb(61, 61, 61);
 }
