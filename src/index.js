@@ -27,6 +27,12 @@ function showCurrentWeather(response) {
 	document.querySelector("#city").innerHTML = response.data.name;
 	document.querySelector("#temp-today").innerHTML = celsiusTemperature;
 	document.querySelector("#forecast-today").innerHTML = response.data.weather[0].description;
+	document
+		.querySelector("#icon")
+		.setAttribute(
+			"src",
+			`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+		);
 }
 
 function searchCity(city) {
