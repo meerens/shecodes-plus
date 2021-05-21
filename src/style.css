@@ -1,7 +1,7 @@
 body {
 	background: #eaeaea;
 	font-family: "Poppins", sans-serif;
-	margin-top: 20px;
+	margin-top: 30px;
 	color: rgb(61, 61, 61);
 }
 
@@ -10,17 +10,21 @@ body {
 	text-align: center;
 	padding: 0;
 }
+a:hover {
+	color: rgb(61, 61, 61);
+}
 
 /* Search Bar */
 
 .form-control {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 300;
-	color: rgb(61 61 61 / 60%);
+	color: rgb(61 61 61 / 60%) !important;
+	border: none !important;
 	border-radius: 25px;
 	border-width: 1px;
 	padding-left: 8px;
-	box-shadow: 0 1px 6px 0 rgb(61 61 61 / 20%);
+	box-shadow: 0 1px 6px 0 rgb(61 61 61 / 20%) !important;
 }
 
 .change-city {
@@ -33,17 +37,20 @@ body {
 	font-size: 20px;
 }
 
+.btn:focus {
+	box-shadow: none !important;
+}
 .col-2 {
 	padding: 0;
 }
 /* Current City & Date */
 
 .city {
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 500;
 }
 .top-date {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 300;
 }
 
@@ -51,8 +58,6 @@ body {
 
 .today-temp {
 	text-align: right;
-	padding-right: 0;
-	padding-top: 15px;
 }
 .today-temp-temp {
 	font-size: 38px;
@@ -71,7 +76,7 @@ body {
 }
 
 .active {
-	color: rgb(61, 61, 61);
+	color: inherit;
 	cursor: default;
 	font-weight: 700;
 }
@@ -85,10 +90,7 @@ body {
 	text-align: left;
 	padding-left: 0;
 }
-.today-forecast {
-	font-size: 16px;
-	font-weight: 300;
-}
+
 /* 5 Day Forecast */
 
 .forecast-header {
