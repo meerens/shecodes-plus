@@ -62,12 +62,14 @@ a:hover {
 .today-temp-temp {
 	font-size: 38px;
 	font-weight: 700;
-	line-height: 100%;
+	line-height: 1;
+	vertical-align: top;
 }
 
 .units {
 	font-size: 12px;
 	vertical-align: top;
+	line-height: 1;
 }
 
 .unit-links {
