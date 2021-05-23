@@ -20,6 +20,8 @@ to be added upon course completion
 
 ## Items to be completed/fixed/updated
 
+📌 = temp solution, to be investigated further
+
 ### Temperature & Units Today
 
 - Styling of units upon click (C in darker colour | F in lighter colour > Temp displayed is in C). How to change CSS styling from JS?
@@ -38,11 +40,15 @@ to be added upon course completion
 
 - Fix alignment of units (ok in browsers, not on mobile)?
 
+  > 📌 SOLVED by wrapping the | in an anchor element. Found no clear answer on why vertical-align doesn't work on mobile (appears to be the device size being below a certain threshold), putting line-height to 1 for both classes gave the best solution for now.
+
 ### Search Bar
 
 - Remove blue auto-focus colour for search bar and current location button
 
   > SOLVED by removing box shadow on :focus (btn) and using !important (Specificity) to overwrite bootstrap CSS for form-control ([MDN Web Docs > Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) || [CSS Tricks > When using !important is the right choice](https://css-tricks.com/when-using-important-is-the-right-choice/))
+
+- Add country code to city output
 
 - Add CSS ease-in-out when hovering over search bar
 
@@ -71,3 +77,7 @@ TBD
 - Different background depending on time of day (nice to have)
 
 - Revisit font hierarchy
+
+- Add meshgradient as background
+
+- When page loads display a message (...)
