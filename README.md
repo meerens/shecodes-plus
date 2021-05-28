@@ -22,6 +22,7 @@ to be added upon course completion
 
 📌 = temp solution, to be investigated further
 🍏 = IOS related
+💭 = nice to have
 
 ### Temperature & Units Today
 
@@ -41,11 +42,11 @@ to be added upon course completion
 
   > 📌 SOLVED by wrapping the | in an anchor element. Found no clear answer on why vertical-align doesn't work on mobile (appears to be the device size being below a certain threshold), putting line-height to 1 for both classes gave the best solution for now.
 
-- Current location button not working on safari/iphone (works fine in Chrome)
+- Current location button not working on iPhone, works fine on laptop
 
 - Fix autozoom on mobile (IOS) when the search-bar is in focus
 
-> 🍏 SOLVED by updating the fontsize to 16px. Apparently IOS will zoom the page if the fontsize of the input field is below 16px and changing the fontsize appears to be the simplest solution. ([Webflow Forums > Prevent zoom in on form focus state for mobile (IOS)](https://forum.webflow.com/t/prevent-zoom-in-on-form-focus-state-for-mobile/33867))
+  > 🍏 SOLVED by updating the fontsize to 16px. Apparently IOS will zoom the page if the fontsize of the input field is below 16px and changing the fontsize appears to be the simplest solution. ([Webflow Forums > Prevent zoom in on form focus state for mobile (IOS)](https://forum.webflow.com/t/prevent-zoom-in-on-form-focus-state-for-mobile/33867))
 
 ### Search Bar
 
@@ -59,7 +60,7 @@ to be added upon course completion
 
 - X icon to clear search didn't appear on iphone
 
-> 🍏 SOLVED by adding CSS snippet, solution found via [Stackoverflow > <input type=“search”> no longer shows cancel button (x) under iOS](https://stackoverflow.com/questions/35583503/input-type-search-no-longer-shows-cancel-button-x-under-ios) - Solution not supported on Firefox, see MDN for more context. [MDN Web Docs > ::-webkit-search-cancel-button](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-search-cancel-button)
+  > 🍏 SOLVED by adding CSS snippet, solution found via [Stackoverflow > <input type=“search”> no longer shows cancel button (x) under iOS](https://stackoverflow.com/questions/35583503/input-type-search-no-longer-shows-cancel-button-x-under-ios) - Solution not supported on Firefox, see MDN for more context. [MDN Web Docs > ::-webkit-search-cancel-button](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-search-cancel-button)
 
 - When using the current location button after having performed a search, the name from the previous search stays in the search bar. How to reset?
 
@@ -67,15 +68,17 @@ to be added upon course completion
 
 - For current weather, fix aligment with text
 
-> SOLVED by removing CSS padding and center aligning the row div in Bootstrap(([Stackflow > Vertical align center in Bootstrap](https://stackoverflow.com/questions/42252443/vertical-align-center-in-bootstrap))
+  > SOLVED by removing CSS padding and center aligning the row div in Bootstrap(([Stackflow > Vertical align center in Bootstrap](https://stackoverflow.com/questions/42252443/vertical-align-center-in-bootstrap))
 
 - Alt text for icons to match description of weather condition
 
-- Icons to update for 5-day forecast
-
 ### 5 Day Forecast
 
-TBD
+PLAN
+
+- Add HTML and CSS for 5-day Forecast (using fake data)
+- Add the API call to get the Forecast data
+- Replace dummy content with real data in JS
 
 ### Graphics & Final Styling
 
