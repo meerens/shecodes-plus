@@ -115,13 +115,17 @@ input[type="search"]::-webkit-search-cancel-button {
 	padding-top: 10px;
 }
 
+.city-forecast {
+	padding: 0;
+}
 .first-column {
-	padding: 5px;
+	padding-right: 45px;
+	text-align: right;
 }
 .second-column {
 	font-size: 14px;
 	text-align: left;
-	padding: 5px;
+	padding-left: 0;
 }
 
 .day {

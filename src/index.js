@@ -23,14 +23,14 @@ currentDateTimeStamp.innerHTML = dateTimeStamp;
 function displayForecast(response) {
 	console.log(response.data.daily);
 	let forecastElement = document.querySelector("#forecast");
-	let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+	let days = ["Thu 00/00", "Fri 00/00", "Sat 00/00", "Sun 00/00", "Mon 00/00"];
 	let forecastHTML = "";
 
 	days.forEach(function (day) {
 		forecastHTML =
 			forecastHTML +
 			`<div class="col first-column" id="day1">
-					<img src="images/rain.svg" width="40px" />
+					<img src="images/01n.png" width="31px" />
 				</div>
 
 				<div class="col second-column" id="day1">
