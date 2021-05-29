@@ -42,8 +42,6 @@ to be added upon course completion
 
   > 📌 SOLVED by wrapping the | in an anchor element. Found no clear answer on why vertical-align doesn't work on mobile (appears to be the device size being below a certain threshold), putting line-height to 1 for both classes gave the best solution for now.
 
-- "Current location" button not working on iPhone (search button performs as expected), works fine on laptop.
-
 - Fix autozoom on mobile (IOS) when the search-bar is in focus
 
   > 🍏📌 SOLVED by updating the fontsize to 16px. Apparently IOS will zoom the page if the fontsize of the input field is below 16px and changing the fontsize appears to be the simplest solution. ([Webflow Forums > Prevent zoom in on form focus state for mobile (IOS)](https://forum.webflow.com/t/prevent-zoom-in-on-form-focus-state-for-mobile/33867))
@@ -54,10 +52,6 @@ to be added upon course completion
 
   > SOLVED by removing box shadow on :focus (btn) and using !important (Specificity) to overwrite bootstrap CSS for form-control ([MDN Web Docs > Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) || [CSS Tricks > When using !important is the right choice](https://css-tricks.com/when-using-important-is-the-right-choice/))
 
-- Add country code to city output
-
-- Add CSS ease-in-out when hovering over search bar
-
 - X icon to clear search didn't appear on iphone
 
   > 🍏 SOLVED by adding CSS snippet, solution found via [Stackoverflow > <input type=“search”> no longer shows cancel button (x) under iOS](https://stackoverflow.com/questions/35583503/input-type-search-no-longer-shows-cancel-button-x-under-ios) - Solution not supported on Firefox, see MDN for more context. [MDN Web Docs > ::-webkit-search-cancel-button](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-search-cancel-button)
@@ -65,6 +59,10 @@ to be added upon course completion
 - When using the current location button after having performed a search, the name from the previous search stays in the search bar. How to reset?
 
   > SOLVED by CSS snippet (see above)
+
+- "Current location" button not working on iPhone (search button performs as expected), works fine on laptop.
+
+- Add country code to city output
 
 ### Weather Icons (API)
 
@@ -90,7 +88,5 @@ PLANNING FOR WEEK 8
 - Different background depending on time of day 💭
 
 - Revisit font hierarchy
-
-- Add meshgradient as background
 
 - Fix column alignment between current and forecast section
