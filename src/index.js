@@ -20,7 +20,8 @@ dateTimeStamp = formatDate(dateTimeStamp);
 let currentDateTimeStamp = document.querySelector("#today-date");
 currentDateTimeStamp.innerHTML = dateTimeStamp;
 
-function displayForecast() {
+function displayForecast(response) {
+	console.log(response.data.daily);
 	let forecastElement = document.querySelector("#forecast");
 	let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
 	let forecastHTML = "";
@@ -45,6 +46,13 @@ function displayForecast() {
 	forecastElement.innerHTML = forecastHTML;
 	console.log(forecastHTML);
 }
+
+function getForecast(coordinates) {
+	console.log(coordinates);
+	let apiKey = "56745bb39d5e088bb2d89ec97249f297";
+	let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=minutely,hourly,alerts&appid=${apiKey}&units=metric`;
+	axios.get(apiURL).then(displayForecast);
+}
 /* Current City (Search) & Temperature */
 
 function showCurrentWeather(response) {
@@ -58,6 +66,8 @@ function showCurrentWeather(response) {
 			"src",
 			`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
 		);
+
+	getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -122,8 +132,6 @@ function showCelsius(event) {
 }
 
 let celsiusTemperature = null; // global variable to reset celsius
-
-displayForecast(); // teporary placement
 
 let linkFahrenheit = document.querySelector("#today-fahrenheit");
 linkFahrenheit.addEventListener("click", showFahrenheit);
