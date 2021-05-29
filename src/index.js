@@ -20,6 +20,31 @@ dateTimeStamp = formatDate(dateTimeStamp);
 let currentDateTimeStamp = document.querySelector("#today-date");
 currentDateTimeStamp.innerHTML = dateTimeStamp;
 
+function displayForecast() {
+	let forecastElement = document.querySelector("#forecast");
+	let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+	let forecastHTML = "";
+
+	days.forEach(function (day) {
+		forecastHTML =
+			forecastHTML +
+			`<div class="col first-column" id="day1">
+					<img src="images/rain.svg" width="40px" />
+				</div>
+
+				<div class="col second-column" id="day1">
+					<span class="day"> ${day} </span><br />
+					<span class="temp" id=forecast-temp-max> 35° </span> 
+					<span class="temp">|</span>
+					<span class="temp" id=forecast-temp-min> 18° </span>
+				</div>
+				<div class="w-100"></div>					
+`;
+	});
+
+	forecastElement.innerHTML = forecastHTML;
+	console.log(forecastHTML);
+}
 /* Current City (Search) & Temperature */
 
 function showCurrentWeather(response) {
@@ -97,6 +122,8 @@ function showCelsius(event) {
 }
 
 let celsiusTemperature = null; // global variable to reset celsius
+
+displayForecast(); // teporary placement
 
 let linkFahrenheit = document.querySelector("#today-fahrenheit");
 linkFahrenheit.addEventListener("click", showFahrenheit);
