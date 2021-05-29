@@ -90,8 +90,6 @@ function currentCity(event) {
 	event.preventDefault();
 	let city = document.querySelector("#city-input").value;
 	searchCity(city);
-	linkCelsius.classList.add("active");
-	linkFahrenheit.classList.remove("active");
 }
 let placeForm = document.querySelector("#change-city");
 placeForm.addEventListener("submit", currentCity);
@@ -102,9 +100,6 @@ formCity.addEventListener("click", currentCity);
 /* Current City (Geo Location) & Temperature */
 
 function geoLocation(position) {
-	linkCelsius.classList.add("active");
-	linkFahrenheit.classList.remove("active");
-
 	let apiKey = "56745bb39d5e088bb2d89ec97249f297";
 	let latitude = position.coords.latitude;
 	let longitude = position.coords.longitude;
@@ -120,33 +115,5 @@ function geoPosition(event) {
 
 let currentGeo = document.querySelector("#location-button");
 currentGeo.addEventListener("click", geoPosition);
-
-/* Celsius | Fahrenheit Conversion */
-
-function showFahrenheit(event) {
-	event.preventDefault();
-	let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-	let currentTemperature = document.querySelector("#temp-today");
-	currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
-	linkCelsius.classList.remove("active");
-	linkFahrenheit.classList.add("active");
-}
-
-function showCelsius(event) {
-	event.preventDefault();
-
-	let currentTemperature = document.querySelector("#temp-today");
-	currentTemperature.innerHTML = celsiusTemperature;
-	linkCelsius.classList.add("active");
-	linkFahrenheit.classList.remove("active");
-}
-
-let celsiusTemperature = null; // global variable to reset celsius
-
-let linkFahrenheit = document.querySelector("#today-fahrenheit");
-linkFahrenheit.addEventListener("click", showFahrenheit);
-
-let linkCelsius = document.querySelector("#today-celsius");
-linkCelsius.addEventListener("click", showCelsius);
 
 searchCity("London");

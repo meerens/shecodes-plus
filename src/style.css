@@ -87,16 +87,6 @@ input[type="search"]::-webkit-search-cancel-button {
 	line-height: 1;
 }
 
-.unit-links {
-	text-decoration: none;
-	color: rgb(61 61 61 / 40%);
-}
-
-.active {
-	color: inherit;
-	cursor: default;
-	font-weight: 700;
-}
 .today-temp-forecast {
 	font-size: 14px;
 	font-weight: 300;
