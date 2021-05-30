@@ -10,7 +10,7 @@ function formatDate(date) {
 		minute: "2-digit",
 		hour: "2-digit",
 	});
-	let formattedDate = `Last updated: ${currentDay} ${currentTime}`;
+	let formattedDate = `${currentDay} ${currentTime}`;
 	return formattedDate;
 }
 
@@ -35,15 +35,17 @@ function displayForecast(response) {
 	let forecastHTML = "";
 
 	forecast.forEach(function (forecastDay, index) {
-		if (index > 0 && index < 6) {
+		if (index > 0 && index < 8) {
 			forecastHTML =
 				forecastHTML +
-				`<div class="col-sm-3" id="day1">
-					<img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="50px" />
-					<span class="day"> ${formatDay(forecastDay.dt)} </span><br />
-					<span class="temp" id=forecast-temp-max>${Math.round(forecastDay.temp.max)}°</span> 
-					<span class="temp">|</span>
-					<span class="temp" id=forecast-temp-min>${Math.round(forecastDay.temp.min)}° </span>
+				`<div class="col-sm-3" id="day">
+					<img src="http://openweathermap.org/img/wn/${
+						forecastDay.weather[0].icon
+					}@2x.png" width="50px" /><br/>
+					<span class="day"> ${formatDay(forecastDay.dt)} </span> <br/>
+					<span class="temp-max" id=forecast-temp-max>${Math.round(forecastDay.temp.max)}°&nbsp</span> 
+					
+					<span class="temp-min" id=forecast-temp-min>${Math.round(forecastDay.temp.min)}° </span>
 				</div>
 								
 `;

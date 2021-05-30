@@ -54,19 +54,20 @@
 			</div>
 			<br />
 			<!-- Current City & Date -->
-			<div class="row city-date">
-				<span class="city" id="city"></span>
-
+			<div class="city-date">
+				<span class="city" id="city"></span><br />
+				<span class="last-update-label">Last update: </span>
 				<span class="top-date" id="today-date"></span>
 			</div>
 			<br />
 			<!-- Current Temperature  -->
 			<div class="row today-temp">
+				<div class="col-sm-3"></div>
 				<div class="col-sm-6">
 					<div class="row">
-						<div class="col">
+						<div class="col icon">
 							<span class="today-temp-icon">
-								<img src=".." alt="cloudy" id="icon" />
+								<img src=".." alt="cloudy" id="icon" width="50px" />
 							</span>
 						</div>
 						<div class="col current-temp">
@@ -77,11 +78,13 @@
 
 					<span class="today-temp-forecast" id="forecast-today"></span>
 				</div>
+				<div class="col-sm-3"></div>
 			</div>
-
+			<br />
 			<!-- 5 Day Forecast -->
-			<div class="forecast-header">5 DAY FORECAST</div>
-			<div class="row city-forecast" id="forecast"></div>
+			<div class="forecast-header">7 Day Forecast</div>
+			<br />
+			<div class="row city-forecast justify-content-around" id="forecast"></div>
 			<br />
 			<!-- Coded By Footer -->
 			<div class="coded-by">
