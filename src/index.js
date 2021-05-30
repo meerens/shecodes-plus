@@ -23,7 +23,7 @@ currentDateTimeStamp.innerHTML = dateTimeStamp;
 function formatDay(timestamp) {
 	let date = new Date(timestamp * 1000);
 	let day = date.getDay();
-	let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 	return days[day];
 }
 
@@ -38,17 +38,14 @@ function displayForecast(response) {
 		if (index > 0 && index < 6) {
 			forecastHTML =
 				forecastHTML +
-				`<div class="col first-column" id="day1">
-					<img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="35px" />
-				</div>
-
-				<div class="col second-column" id="day1">
+				`<div class="col-sm-3" id="day1">
+					<img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="50px" />
 					<span class="day"> ${formatDay(forecastDay.dt)} </span><br />
 					<span class="temp" id=forecast-temp-max>${Math.round(forecastDay.temp.max)}°</span> 
 					<span class="temp">|</span>
 					<span class="temp" id=forecast-temp-min>${Math.round(forecastDay.temp.min)}° </span>
 				</div>
-				<div class="w-100"></div>					
+								
 `;
 		}
 	});

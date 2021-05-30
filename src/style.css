@@ -1,20 +1,17 @@
 body {
 	background: #eaeaea;
 	font-family: "Poppins", sans-serif;
-	margin-top: 30px;
-	color: rgb(61, 61, 61);
-}
-
-.container {
-	width: 300px;
-	text-align: center;
-	padding: 0;
-}
-a:hover {
+	margin-top: 25px;
 	color: rgb(61, 61, 61);
 }
 
 /* Search Bar */
+
+.container {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
 
 .form-control {
 	font-size: 16px;
@@ -71,9 +68,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Current Temperature  */
 
-.today-temp {
-	text-align: left;
-}
 .today-temp-temp {
 	font-size: 38px;
 	font-weight: 700;
@@ -93,7 +87,6 @@ input[type="search"]::-webkit-search-cancel-button {
 	text-transform: capitalize;
 }
 .today-temp-icon {
-	text-align: right;
 	padding-right: 0;
 }
 
@@ -110,11 +103,10 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .first-column {
 	padding-right: 45px;
-	text-align: right;
 }
 .second-column {
 	font-size: 14px;
-	text-align: left;
+
 	padding-left: 0;
 }
 

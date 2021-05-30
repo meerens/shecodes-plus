@@ -61,25 +61,27 @@
 			</div>
 			<br />
 			<!-- Current Temperature  -->
-			<div class="row align-items-center city-today">
-				<div class="col today-temp-icon">
-					<img src=".." alt="cloudy" id="icon" />
-				</div>
-				<div class="col today-temp">
-					<span class="today-temp-temp" id="temp-today"></span>
-					<span class="units">
-						°C
-					</span>
-
+			<div class="row today-temp">
+				<div class="col-sm-6">
 					<div class="row">
+						<div class="col">
+							<span class="today-temp-icon">
+								<img src=".." alt="cloudy" id="icon" />
+							</span>
+						</div>
+						<div class="col current-temp">
+							<span class="today-temp-temp" id="temp-today"></span>
+							<span class="units"> °C </span>
+						</div>
+					</div>
+
 					<span class="today-temp-forecast" id="forecast-today"></span>
 				</div>
 			</div>
+
 			<!-- 5 Day Forecast -->
 			<div class="forecast-header">5 DAY FORECAST</div>
-			<div class="row city-forecast align-items-center" id="forecast">
-				
-			</div>
+			<div class="row city-forecast" id="forecast"></div>
 			<br />
 			<!-- Coded By Footer -->
 			<div class="coded-by">
