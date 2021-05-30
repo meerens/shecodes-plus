@@ -30,6 +30,10 @@ body {
 	align-content: center;
 }
 
+.location-button,
+.search-button {
+	padding: 20px;
+}
 .fa-location-arrow,
 .fa-search {
 	font-size: 20px;
