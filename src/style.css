@@ -1,10 +1,10 @@
 /* Body */
 
 body {
-	background: #9c9e98;
+	background: #b1b2ad;
 	font-family: "Poppins", sans-serif;
 	margin-top: 25px;
-	color: rgb(61, 61, 61);
+	color: rgb(54, 53, 53);
 }
 
 /* Search Bar */
@@ -17,12 +17,12 @@ body {
 .form-control {
 	font-size: 16px;
 	font-weight: 300;
-	color: rgb(61 61 61 / 80%) !important;
+	color: rgb(54 54 53 / 80%) !important;
 	border: none !important;
 	border-radius: 25px;
 	border-width: 1px;
 	padding-left: 8px;
-	box-shadow: 0 1px 6px 0 rgb(61 61 61 / 20%) !important;
+	box-shadow: 0 1px 6px 0 rgb(54 54 53 / 20%) !important;
 }
 
 .change-city {
@@ -71,7 +71,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .top-date {
 	font-weight: 300;
-	color: rgb(61 61 61 / 80%);
+	color: rgb(54 54 53 / 80%);
 }
 
 /* Current Temperature  */
@@ -126,7 +126,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .temp-min {
-	color: rgb(61 61 61 / 80%);
+	color: rgb(54 54 53 / 80%);
 }
 .temp-max {
 	font-weight: 500;
@@ -136,11 +136,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .coded-by {
 	font-size: 16px;
 	font-weight: 300;
-	color: rgb(61 61 61 / 80%);
+	color: rgb(54 54 53 / 80%);
 	padding-top: 20px;
 }
 .fa-github-square,
 .fa-linkedin {
 	font-size: 20px;
-	color: rgb(61, 61, 61);
+	color: rgb(54, 54, 53);
 }
