@@ -23,6 +23,7 @@ to be added upon course completion
 📌 = temp solution, to be investigated further
 🍏 = IOS related
 🔚 = decomissioned feature
+🔜 = to be added
 
 ## To Do
 
@@ -35,8 +36,8 @@ PLANNING FINAL WEEK
 
 - Revisit font hierarchy ✅
 - Revisit colour scheme (to work with new icons)
-- Add country code to output
-- Add alt text (including image icons)
+- Add country code to output ✅
+- Add alt text (including image icons) 🔜
 
 ## Fixes / Solutions
 
@@ -72,9 +73,9 @@ PLANNING FINAL WEEK
 
   > 🍏📌 SOLVED by adding CSS snippet, solution found via [Stackoverflow > <input type=“search”> no longer shows cancel button (x) under iOS](https://stackoverflow.com/questions/35583503/input-type-search-no-longer-shows-cancel-button-x-under-ios) - Solution not supported on Firefox, see MDN for more context. [MDN Web Docs > ::-webkit-search-cancel-button](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-search-cancel-button)
 
-- When using the current location button after having performed a search, the name from the previous search stays in the search bar. How to reset?
-
 - "Current location" button not working on iPhone (search button performs as expected), works fine on laptop.
+
+  > ISOLATED Issue? Had other users test on IOS devices and they didn't have any issues.
 
 ### `Weather Icons (API)`
 
