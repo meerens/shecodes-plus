@@ -40,9 +40,7 @@ function displayForecast(response) {
 				forecastHTML +
 				`<div class="col-sm-2" id="day">
 				<span class="day"> ${formatDay(forecastDay.dt)} </span> <br/>
-					<img src="http://openweathermap.org/img/wn/${
-						forecastDay.weather[0].icon
-					}@2x.png" width="50px" /><br/>
+					<img src="images/${forecastDay.weather[0].icon}.png" width="40px" /><br/>
 					
 					<span class="temp-max" id=forecast-temp-max>${Math.round(forecastDay.temp.max)}°&nbsp</span> 
 					
@@ -71,10 +69,7 @@ function showCurrentWeather(response) {
 	document.querySelector("#forecast-today").innerHTML = response.data.weather[0].description;
 	document
 		.querySelector("#icon")
-		.setAttribute(
-			"src",
-			`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-		);
+		.setAttribute("src", `images/${response.data.weather[0].icon}.png`);
 
 	getForecast(response.data.coord);
 }
