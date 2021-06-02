@@ -64,8 +64,9 @@ function getForecast(coordinates) {
 /* Current City (Search) & Temperature */
 
 function showCurrentWeather(response) {
+	console.log(response.data);
 	celsiusTemperature = Math.round(response.data.main.temp);
-	document.querySelector("#city").innerHTML = response.data.name;
+	document.querySelector("#city").innerHTML = `${response.data.name}, ${response.data.sys.country}`;
 	document.querySelector("#temp-today").innerHTML = celsiusTemperature;
 	document.querySelector("#forecast-today").innerHTML = response.data.weather[0].description;
 	document
