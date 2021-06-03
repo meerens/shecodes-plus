@@ -79,11 +79,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .today-temp-temp {
 	font-size: 45px;
 	font-weight: 700;
+	vertical-align: top;
+	line-height: 1;
 }
 .units {
 	font-size: 14px;
-
-	line-height: 1;
 }
 
 .today-temp-forecast {
