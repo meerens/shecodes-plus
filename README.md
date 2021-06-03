@@ -8,11 +8,8 @@ This is my first attempt at better documenting my progress and capturing lessons
 
 The application is responsive but not perfect. We haven't covered all the content but I managed to create something that should display nicely on your desktop/laptop and most mobile devices 🤞🏼
 
-Link to app:
-to be added upon course completion
-
-Link to course certificate:
-to be added upon course completion
+🔗 [Link to application](https://www.shecodes.io/workshops/shecodes-plus-60-0/projects/369159)
+🔗 [Link to course certificate](https://www.shecodes.io/certificates/11f52acdfbdb588b3504483b30aaf24a)
 
 ## Languages & tools
 
