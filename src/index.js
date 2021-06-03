@@ -23,7 +23,7 @@ currentDateTimeStamp.innerHTML = dateTimeStamp;
 function formatDay(timestamp) {
 	let date = new Date(timestamp * 1000);
 	let day = date.getDay();
-	let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+	let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 	return days[day];
 }
 
@@ -40,7 +40,7 @@ function displayForecast(response) {
 				forecastHTML +
 				`<div class="col-sm-2" id="day">
 				<span class="day"> ${formatDay(forecastDay.dt)} </span> <br/>
-					<img src="images/${forecastDay.weather[0].icon}.png" width="50px" /><br/>
+					<img src="images/${forecastDay.weather[0].icon}.png" width="60px" /><br/>
 					
 					<span class="temp-max" id=forecast-temp-max>${Math.round(forecastDay.temp.max)}°&nbsp</span> 
 					
